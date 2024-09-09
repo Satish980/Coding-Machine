@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: rgb(231, 244, 246);
+            font: message-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 4px;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .drop-container {
+            border-style: dotted;
+            border-radius: 4px;
+            border-color: rgb(0, 132, 255);
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 300px;
+            color: rgb(0, 132, 255);
+            background-color: rgba(20, 230, 216, 0.1);
+            /* background: ; */
+        }
+
+        .content-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list-items {
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            width: 100%;
+            background-color: rgb(217, 240, 246);
+            border-style: solid;
+            border-radius: 4px;
+            /* padding: 10px; */
+            border-color: rgb(31, 34, 37);
+            font: oblique;
+            min-height: 30px;
+            justify-content: flex-start;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <div class="container">
+        <div class="content-text">
+            <h3>How to drag and drop files</h3>
+            <p>Drag or drop one or multiple files onto the page</p>
+        </div>
+
+        <div class="drop-container" id="drop-zone" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+            Drag & Drop Here
+        </div>
+
+        <div class="list-items" id="list-container">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
