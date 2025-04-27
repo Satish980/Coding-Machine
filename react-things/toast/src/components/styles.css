@@ -1,0 +1,41 @@
+.notification {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+}
+
+.close-btn {
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
